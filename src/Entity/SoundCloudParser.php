@@ -11,8 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
 class SoundCloudParser
 {
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -75,28 +75,27 @@ class SoundCloudParser
     public function setTrackName(string $trackName): self
     {
         $this->trackName = $trackName;
-
         return $this;
     }
 
-    public function getduration(): ?\DateTimeInterface
+    public function getDuration(): ?string
     {
         return $this->duration;
     }
 
-    public function setduration(\DateTimeInterface $duration): self
+    public function setDuration(string $duration): self
     {
         $this->duration = $duration;
 
         return $this;
     }
 
-    public function getlisteningsCount(): ?int
+    public function getListeningsCount(): ?int
     {
         return $this->listeningsCount;
     }
 
-    public function setlisteningsCount(int $listeningsCount): self
+    public function setListeningsCount(int $listeningsCount): self
     {
         $this->listeningsCount = $listeningsCount;
 

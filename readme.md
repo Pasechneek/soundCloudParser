@@ -7,10 +7,15 @@
 Класс получает ссылку на артиста вида https://soundcloud.com/lakeyinspired и парсит треки данного артиста:
 
 https://soundcloud.com/lakeyinspired
+
 https://soundcloud.com/aljoshakonstanty
+
 https://soundcloud.com/birocratic
+
 https://soundcloud.com/dixxy-2
+
 https://soundcloud.com/dekobe
+
 Класс должен:
 Получать данные треков и сохранять их в БД 
 (как минимум 
@@ -40,8 +45,42 @@ Composer;
 MySQL (структура таблиц на усмотрение исполнителя).
 
 
-To start this project I used:
+In this project I used:
 1. Composer (version 2.1.12)   (make composer)
-2. Symfony installed globally  (make symfony)
+2. Symfony CLI version v4.26.8 installed globally  (make symfony)
 3. Check the sistem (make check) then fix all problems you might faced
 4. php v.8.0 installed globally
+6. hacker music playlist https://www.youtube.com/watch?v=M5QY2_8704o&list=PLdE7uo_7KBkfAWkk7-Clm18krBuziKQfr
+
+
+How to start...
+
+To check 
+
+create .env.local file
+
+configure DATABASE_URL in this file 
+
+for example:
+
+DATABASE_URL="mysql://parser:parser@parser_mysql:3306/parser?serverVersion=mariadb-10.6.4"
+
+Run docker.
+
+./docker/up --build
+
+Then go to PHP container
+
+./docker/php
+
+make a migration inside this container
+
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate
+
+to check database just visit the http://localhost:8002/ in your browser
+
+to check the example just visit the http://localhost:8000/example.php in your browser
+
+

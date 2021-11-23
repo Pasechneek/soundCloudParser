@@ -1,7 +1,6 @@
 
-symfony1:
-	wget https://get.symfony.com/cli/installer -O - | bash
-	sudo mv /home/danil/.symfony/bin/symfony /usr/local/bin/symfony
+start:
+	symfony server:start
 
 check:
 	symfony check:requirements

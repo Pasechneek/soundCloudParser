@@ -91,6 +91,9 @@
     "nikic/php-parser": {
         "version": "v4.13.1"
     },
+    "phpquery/phpquery": {
+        "version": "0.0.4"
+    },
     "psr/cache": {
         "version": "2.0.0"
     },
@@ -124,6 +127,9 @@
             "bin/console"
         ]
     },
+    "symfony/css-selector": {
+        "version": "v5.3.4"
+    },
     "symfony/dependency-injection": {
         "version": "v5.3.10"
     },
@@ -132,6 +138,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v5.3.8"
+    },
+    "symfony/dom-crawler": {
+        "version": "v5.3.7"
     },
     "symfony/dotenv": {
         "version": "v5.3.10"
@@ -181,6 +190,9 @@
             "src/Kernel.php",
             "src/Controller/.gitignore"
         ]
+    },
+    "symfony/http-client": {
+        "version": "v5.3.10"
     },
     "symfony/http-client-contracts": {
         "version": "v2.4.0"
