@@ -48,14 +48,11 @@ MySQL (структура таблиц на усмотрение исполни�
 In this project I used:
 1. Composer (version 2.1.12)   (make composer)
 2. Symfony CLI version v4.26.8 installed globally  (make symfony)
-3. Check the sistem (make check) then fix all problems you might faced
-4. php v.8.0 installed globally
+4. php v.8.0 - docker
 6. hacker music playlist https://www.youtube.com/watch?v=M5QY2_8704o&list=PLdE7uo_7KBkfAWkk7-Clm18krBuziKQfr
 
 
 How to start...
-
-To check 
 
 create .env.local file
 
