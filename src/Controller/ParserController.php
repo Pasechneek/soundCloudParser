@@ -10,6 +10,9 @@ use App\Entity\SoundCloudParser;
 
 class ParserController extends AbstractController
 {
+    /**
+     * @return Response
+     */
     #[Route('/parser', name: 'parser')]
     public function createSoundCloudParser(): Response
     {
@@ -26,6 +29,7 @@ class ParserController extends AbstractController
         $item->setArtistCity('los angelos');
         $item->setSubscribersCount(5);
         $item->setIsInDatabaseAlready(false);
+        dump("it works");
 
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)

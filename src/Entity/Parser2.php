@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Parser2;
 
 use App\Repository\Parser2Repository;
 use Doctrine\ORM\Mapping as ORM;
